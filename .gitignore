@@ -31,4 +31,7 @@
 *.out
 *.app
 
+# dia backup file
+*.dia~
+
 images/
