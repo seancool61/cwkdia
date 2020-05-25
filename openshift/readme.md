@@ -1,22 +1,33 @@
 # openshift vs kubernetes
+The video talks about openshift vs kubernetes.
 
 ## what is openshift
 OpenShift is a family of containerization software developed by Red Hat.
 v3: adpoted Docker as the container technology, and Kubernetes as the container orchestration technology.
 v4: Using CRIO as the container runtime and Podman for interacting with pods and containers), thus breaking the exclusive dependency on Docker. 
 
+## Architecture
+1. able to run on public and private clouds
+2. must run OS either redhat or centos
+3. on the top of OS, we run Kubernetes
+4. Openshift is a toolbox which consists of lots of tools; such as Podman, Jenkins etc
+
+https://www.youtube.com/watch?v=KTN_QBuDplo&t=203s
+
 ## Comparison 
 1. product vs. project
+	Openshift is a proudct. Kubernetes is a project.
 2. limited installation
+	2.1 redhat or CentOs
 3. more strict security policies
-4. Routers vs. Ingress
+	3.1 OpenShift forbids to run a container as root
+4. network configuration
 5. a different approach to deployments
 	- There is a bit of a learning curve. 
 	- Not for small deployments.
-6. a better management of container images
-7. Integrated CI/CD with Jenkins
-8. OpenShift projects are more than Kubernetes namespaces
-9. OpenShift is easier for beginners
+6. Integrated CI/CD with Jenkins
+
+
 
 
 https://cloudowski.com/articles/10-differences-between-openshift-and-kubernetes/
