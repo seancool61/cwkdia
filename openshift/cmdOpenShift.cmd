@@ -22,4 +22,14 @@ for /L %%a in (4,1,10) do (
 	rem C:\Progra~2\Dia\bin\diaw.exe OpenShift.dia -t png --size=512x --show-layers=!layerrange! --export=!filename!
 	C:\Progra~2\Dia\bin\diaw.exe OpenShift.dia -t png --size=4096x --show-layers=!layerrange! --export=!filename!
 )
+
+for /L %%a in (11,1,16) do (
+	set "layerrange=Background,11,%%a"
+	set "filename=images\dia_openshift_%%a.png"
+	echo .....layerrange !layerrange! filename !filename!
+	rem C:\Progra~2\Dia\bin\diaw.exe OpenShift.dia -t png --size=512x --show-layers=!layerrange! --export=!filename!
+	C:\Progra~2\Dia\bin\diaw.exe OpenShift.dia -t png --size=4096x --show-layers=!layerrange! --export=!filename!
+)
+
+
 endlocal
